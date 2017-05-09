@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- css -->
+<link rel="stylesheet" href="css/index.css"></link>
+<script src="lib/jquery.min.js"></script>
+<script src="lib/angular.min.js"></script>
+
+<script src="js/index.js"></script>
+</head>
+<body data-ng-app="myApp" data-ng-controller="indexController">
+	Hello!
+	<div id="header">
+		<ul class="menu">
+			<!-- <li>{{home}}</li>
+			<li>{{homes}}</li>
+			<li>GHJ</li> -->
+			<li data-ng-repeat="menuNav in menuNav">{{menuNav}}</li>
+		</ul>
+	</div>
+	<div id="leftpanel">
+	<div id="bas">Menu</div>
+		<ul id="can" class="menu1">
+			<!-- <li>ABC</li>
+			<li>DEF</li>
+			<li>GHJ</li> -->
+			<li data-ng-repeat="test in test">{{test.name}}</li>
+		</ul>
+	</div>
+	<div id="content">content</div>
+	<div id="rightpanel">right</div>
+	<div id="footer">footer</div>
+
+</body>
+</html>
